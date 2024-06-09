@@ -1,3 +1,3 @@
-# Enunciado
-
-Este é um projeto que simula o funcionamento de uma academia de artes marciais. Na academia, os membros são registrados com nome, idade e tipo de plano ao qual estão associados. Já os instrutores têm suas especialidades e certificações documentadas. As aulas oferecidas são registradas com nome, horário e o instrutor responsável. Além disso, as participações dos membros nas aulas são documentadas, associando cada membro à aula correspondente.
+Trabalho Feito Por:
+Nathany De Lima Souza
+Breno Diana
