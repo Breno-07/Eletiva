@@ -1,0 +1,98 @@
+<!--Feito por Breno Diana E Nathany De Lima Souza -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script type="text/javascript" src="../CSS/script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    
+    <header>
+        <img src="../img/logo.png">
+        <h1>Xhopii</h1>
+    </header>
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="cadastroCliente.php">Cadastro Cliente</a></li>
+            <li><a href="cadastroCliente.php">Cadastro Funcionário</a></li>
+            <li><a href="cadastroCliente.php">Cadastro Produto</a></li>
+            <li><a href="cadastroCliente.php">Ver Clientes</a></li>
+            <li><a href="cadastroCliente.php">Ver Funcionário</a></li>
+            <li><a href="verCliente.php">Ver Produtos</a></li>
+        </ul>
+    </nav>
+    <div class="produto-imagem">
+        <div class="produto-miniatura">
+            <img src="../img/produto1.png" onclick="selecionarImgProduto(this)">
+            <img src="../img/produto2.png" onclick="selecionarImgProduto(this)">
+            <img src="../img/produto3.png" onclick="selecionarImgProduto(this)">
+            <img src="../img/produto4.png" onclick="selecionarImgProduto(this)">
+            <img src="../img/produto5.png" onclick="selecionarImgProduto(this)">
+        </div>
+        <div class="produto-principal" id="produtoPrincipal">
+            <img id="imgPrincipal" src="../img/produto1.png">
+        </div>
+    </div>
+
+    <div class="produto-detalhes">
+        <h1>Camisa Desenvolvedor Front-End CSS</h1>
+        <h2 id="precoProduto">R$56,90</h2>
+        <p id="qtdDisponivel" >171 peças dísponíveis</p>
+        <p>Modelos:</p>
+        <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)" name ="59.90" value="171" data-cor="Preto"  data-img="../img/produto1.png"> Preto</button>
+        <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)" name ="59.90" value="171" data-cor="Azul" data-img="../img/produto2.png">Azul</button>
+        <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)" name ="49.90" value="151" data-cor="Verde" data-img="../img/produto3.png">Verde</button>
+        <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)" name ="69.90" value="353" data-cor="Cinza" data-img="../img/produto4.png">Cinza</button>
+        <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)" name ="69.90" value="139" data-cor="Rosa" data-img="../img/produto5.png">Rosa</button>
+
+        <p>Tamanhos:</p>
+        <button class="botao" id="btnTamanhoP" onclick="mudarTamanho(this)" value ="P">P</button>
+        <button class="botao" id="btnTamanhoM" onclick="mudarTamanho(this)" value ="M">M</button>
+        <button class="botao" id="btnTamanhoG" onclick="mudarTamanho(this)" value ="G">G</button>
+        <button class="botao" id="btnTamanhoGG" onclick="mudarTamanho(this)" value ="GG">GG</button>
+        <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
+        <button id="botaoComprar">Comprar Agora</button>
+
+        
+    </div>
+
+    <script>
+        function selecionarImgProduto(img) {
+            var imgPrincipal = document.getElementById("imgPrincipal");
+            imgPrincipal.src = img.src;
+        }
+
+        function mudarPreco(btn) {
+        var precoProduto = document.getElementById("precoProduto");
+        var qtdDisponivel = document.getElementById("qtdDisponivel");
+        var corSelecionada = btn.getAttribute("data-cor");
+        var novaImagem = btn.getAttribute("data-img");
+
+        precoProduto.textContent = "R$" + btn.name;
+        qtdDisponivel.textContent = btn.value + " peças disponíveis";
+        document.getElementById("tamanhoSelecionado").textContent = "Tamanho Selecionado: P";
+        document.getElementById("imgPrincipal").src = novaImagem; // Altera a imagem principal
+        document.getElementById("imgPrincipal").alt = corSelecionada;
+    }
+
+    function selecionarImgProduto(img) {
+        var imgPrincipal = document.getElementById("imgPrincipal");
+        imgPrincipal.src = img.src;
+    }
+
+    function mudarTamanho(btn) {
+        var tamanhoSelecionado = document.getElementById("tamanhoSelecionado");
+        tamanhoSelecionado.textContent = "Tamanho Selecionado: " + btn.value;
+    }
+        function mudarTamanho(btn) {
+            var tamanhoSelecionado = document.getElementById("tamanhoSelecionado");
+            tamanhoSelecionado.textContent = "Tamanho Selecionado: " + btn.value;
+        }
+    </script>
+</body>
+</html>

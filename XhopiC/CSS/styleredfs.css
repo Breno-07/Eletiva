@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+
+}
+
+header {
+  background-color: rgb(215, 215, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+
+header .Entre {
+  position: absolute;
+  left: 22em;
+  color: black;
+}
+
+header h1 {
+  font-size: 20px;
+  color: rgb(251, 86, 48);
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  position: absolute;
+  left: 18em;
+}
+
+header .Ajuda {
+  font-size: 20px;
+  color: rgb(251, 86, 48);
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  position: relative;
+  left: 300px;
+  font-size: small;
+}
+
+header img {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  display: inline;
+  position: relative;
+  right: 18em;
+}
+
+.menu-central {
+  background-color: rgb(255, 255, 255);
+  height: 550px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+
+.Center {
+  background-color: white;
+  width: 30%;
+  height: 240px;
+  list-style: none;
+  margin-top: 150px;
+  margin-right: 35%;
+  float: right;
+
+}
+
+.Center ul {
+  border-style:ridge;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+
+}
+.Center .seta {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 23em;
+}
+
+.textC {
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 1em;
+}
+
+.test {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  width: 23em;
+  padding: 5px;
+
+}
+
+.Center #btnEntre {
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(251, 86, 48);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 1px solid rgba(0, 0, 0, .09);
+  margin: 10px 8px 8px 10px;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  width: 23em;
+}
+
+.Center #btnEntre:hover {
+  color: rgb(251, 86, 48);
+  border: 1px solid rgb(251, 86, 48);
+}
+
+.Center #btnEntre:hover {
+  opacity: 0.9;
+}
+
+.Center .Redirecionar {
+  font-size: 13px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 76%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.line {
+  width: 40%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.logos {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.button-01,
+.button-facebook,
+.button-google,
+.button-02 {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "iFoodRCTextos-Regular";
+  white-space: nowrap;
+}
+
+.button-01 img,
+.button-facebook img {
+  width: 20px;
+  float: left;
+  margin-left: 10px;
+}
+
+.button-01,
+.button-02 {
+  border: 1px solid #e0e0e0;
+  margin: 10px auto 0;
+}
+
+.button-google,
+.button-facebook {
+  background: #fff;
+  color: #000;
+  width: 30%;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.button-02 {
+  width: 30%;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #a6a6a6;
+}
+
+
+footer {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.conteudo-footer {
+  max-width: 87.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+  margin: auto;
+  
+}
+
+.conteudo-footer h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+  color: rgb(68, 63, 63);
+}
+
+.conteudo-footer p {
+  color: rgb(131, 125, 125);
+  font-size: 0.9em;
+  margin-bottom: 0.4em;
+  cursor: pointer;
+}
+
+.cartao-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1.5rem;
+  justify-items: center;
+
+}
+
+.cartao-logos img {
+  width: 50px;
+  height: auto;
+  background-color: #fff;
+
+}
+
+.siganos,
+.atendimento, .sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: left;
+}
+
+.siganos img,
+.atendimento img {
+  width: 30px;
+  height: auto;
+  background-color: #fff;
+}
+.siganos p {
+  display: flex;
+  align-items: center;
+}
+
+.siganos img {
+  margin-right: 10px;
+}
+
+.atendimento .QR {
+  width: 6rem;
+  height: auto;
+
+}
+
+.linha {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  width: 100%;
+  max-width: 87.5em;
+  border: 0.06em solid rgb(173, 169, 169);
+  
+}
+
+.cadastro-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cadastrar-text {
+  color: rgb(251, 86, 48);
+  margin-bottom: 20px;
+}
+
+.copyright {
+  margin-top: 1.25em;
+  padding: 1em;
+}
+
+.copyright p {
+  margin: 0;
+  color: rgb(68, 63, 63);
+}

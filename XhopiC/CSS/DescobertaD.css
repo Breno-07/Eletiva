@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 85px;
+  width: 100%;
+  background-color: rgb(251, 86, 48);
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+}
+
+header img {
+  height: 60px;
+  width: 60px;
+}
+
+.sair {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  float: right;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.menu-horizontal ul {
+  background-color: #fb772f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-horizontal ul li {
+  list-style: none;
+}
+
+.menu-horizontal ul li a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.menu-horizontal ul li a:hover {
+  font-weight: bold;
+  color: rgb(251, 86, 48);
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.promo {
+  display: flex;
+  margin: 2rem auto;
+}
+
+#descobertas h5 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fb772f;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fb772f;
+  margin: 0 auto;
+  display: block;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: calc(20% - 1rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.produto img {
+  width: 100%;
+}
+
+.produto h6 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.preco-disponibilidade {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.preco,
+.disponibilidade {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.preco {
+  color: #fb772f;
+}
+
+#descobertas h5 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fb772f;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fb772f;
+  margin: 0 auto;
+  display: block;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: calc(20% - 1rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.produto img {
+  width: 100%;
+}
+
+.produto h6 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.preco-disponibilidade {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.preco,
+.disponibilidade {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.preco {
+  color: #fb772f;
+}
+      
+footer {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.conteudo-footer {
+  max-width: 87.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em;
+  margin: auto;
+  
+}
+
+.conteudo-footer h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+  color: rgb(68, 63, 63);
+}
+
+.conteudo-footer p {
+  color: rgb(131, 125, 125);
+  font-size: 0.9em;
+  margin-bottom: 0.4em;
+  cursor: pointer;
+}
+
+.cartao-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1.5rem;
+  justify-items: center;
+
+}
+
+.cartao-logos img {
+  width: 50px;
+  height: auto;
+  background-color: #fff;
+
+}
+
+.siganos,
+.atendimento, .sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: left;
+}
+
+.siganos img,
+.atendimento img {
+  width: 30px;
+  height: auto;
+  background-color: #fff;
+}
+.siganos p {
+  display: flex;
+  align-items: center;
+}
+
+.siganos img {
+  margin-right: 10px;
+}
+
+.atendimento .QR {
+  width: 6rem;
+  height: auto;
+
+}
+
+.linha {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  width: 100%;
+  max-width: 87.5em;
+  border: 0.06em solid rgb(173, 169, 169);
+  
+}
+
+.cadastro-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cadastrar-text {
+  color: rgb(251, 86, 48);
+  margin-bottom: 20px;
+}
+
+.copyright {
+  margin-top: 1.25em;
+  padding: 1em;
+}
+
+.copyright p {
+  margin: 0;
+  color: rgb(68, 63, 63);
+}
